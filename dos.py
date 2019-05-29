@@ -6,7 +6,7 @@ import struct
 import threading
 from random import randint
 from optparse import OptionParser
-from pinject import IP, UDP
+import signal
 
 USAGE = '''
 %prog target.com [options]        # DDoS
@@ -14,12 +14,15 @@ USAGE = '''
 '''
 
 LOGO = r'''
-	    _   ___    ___    
-           | | /    \ / __|
-         __| | | [] | [__ |
-        / Π| | \ __ /  __||
-        \____|        |___/
-	https://github.com/R00T-H4WK/dos
+	 ____
+        |  _ \  ___  ___
+        | | | |/ _ \/ __|
+        | |_| | (_) \__ \
+        |____/ \___/|___/
+
+        https://github.com/R00T-H4WK/dos
+        Author  : R00T-H4WK
+        Version : 0.2
 '''
 
 HELP = (
